@@ -18,3 +18,107 @@ time, mark, audio, video {
    vertical-align: baseline;
    background: transparent;
 }
+.home-header {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+
+}
+.search {
+   text-align: center;
+   font-size: 1.3rem;
+   border: 1px solid black;
+   border-radius: 30px;
+}
+.searchbox {
+   display: flex;
+   border: 0;
+   background: white;
+}
+.search-button {
+   border: 0px;
+   background: white;
+}
+.navigation {
+   display: flex;
+   gap: 20px;
+   padding-bottom: 20px;
+   padding-top: 15px;
+}
+.search:focus-visible {
+   border:none;
+   outline-offset:none;
+}
+.home-call-worker {
+   border: 1px solid black;
+   border-radius: 15px;
+   background:white;
+   padding: 5px;
+   margin: 5px;
+   max-width: 200px;
+   max-height: 30px;
+   min-width: 140px;
+   @media (max-width: 800px) {
+      max-width: 140px;
+   }
+}
+.home-short-info {
+   display: flex;
+   flex-direction: column;
+}
+.home-name {
+   font-size: 2.5rem;
+}
+.home-profession {
+   font-size: 1.3rem;
+}
+.home-main {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items:center;
+   padding-top: 4rem;
+}
+.home-offer {
+   font-size: 2rem;
+}
+
+.home-visit_card-worker {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   @media (max-width: 800px) {
+      flex-direction: column;
+   }
+}
+.home-content {
+   display: flex;
+   padding: 2rem;
+   flex-direction: row;
+}
+.home-content-box {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: 800px;
+   display: flex;
+   align-items:center;
+   padding: 1.1rem;
+}
+.home-avatar {
+   border-radius: 40px;
+}
+.home-div-description {
+   display: flex;
+   flex-direction: column;
+   padding-top: 1.3rem;
+}
+.home-exp {
+   padding-top: 1.4rem;
+   font-size: 1.2rem;
+}
+.home-about_me {
+   font-size: 1.6rem;
+}
