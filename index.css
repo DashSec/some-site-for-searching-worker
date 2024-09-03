@@ -23,6 +23,8 @@ time, mark, audio, video {
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
+   position: sticky;
+   top: 0.3rem;
 
 }
 .search {
@@ -34,14 +36,14 @@ time, mark, audio, video {
 .searchbox {
    display: flex;
    border: 0;
-   background: white;
+   background: rgba(255, 255, 255, 0);
    @media (max-width: 800px) {
       order: 2;
    }
 }
 .search-button {
    border: 0px;
-   background: white;
+   background: rgba(255, 255, 255, 0);
 }
 .navigation {
    display: flex;
@@ -49,8 +51,6 @@ time, mark, audio, video {
    gap: 2rem;
    padding-bottom: 20px;
    padding-top: 15px;
-   position: sticky;
-   top: 0.3rem;
    animation: fadeIn 0.5s;
    @media (max-width: 800px) {
       flex-direction: column;
@@ -60,7 +60,7 @@ time, mark, audio, video {
       flex-grow: 1;
    }
 }
-.home-hrefs {
+.home-actions {
    display: flex;
    align-items:center;
    justify-content: space-evenly;
@@ -76,22 +76,27 @@ time, mark, audio, video {
       justify-content: space-evenly;
    }
 }
-.home-href {
+.home-action {
    text-decoration: none;
+   border:1px solid rgba(0, 0, 0, 0);
+   border-radius:20px;
+   padding: 2px 10px;
    color:black;
 }
-.home-href:hover {
+.home-action:hover {
    color:rgb(65, 65, 65);
    border:1px solid rgb(65, 65, 65);
    border-radius:20px;
    padding: 2px 10px;
 }
 .search:focus-visible {
-   border:none;
+   border: 1px solid rgba(65, 65, 65, 0);
    outline-offset:none;
+   border-radius:20px;
+   padding: 2px 10px;
 }
 .home-call-worker {
-   border: 1px solid black;
+   border: 1px solid rgba(0, 0, 0, 0.322);
    border-radius: 15px;
    background:white;
    padding: 5px;
@@ -139,15 +144,17 @@ time, mark, audio, video {
    display: flex;
    padding: 2rem;
    flex-direction: row;
+   gap: 20px;
 }
 .home-content-box {
    display: flex;
    flex-direction: column;
    width: 100%;
    max-width: 800px;
-   display: flex;
    align-items:center;
    padding: 1.1rem;
+   border-radius:30px;
+   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.137), 0 2px 20px 10px rgba(0, 0, 0, 0.062);
    animation: fadeIn 1s;
 }
 .home-avatar {
